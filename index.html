@@ -2,41 +2,73 @@
 <html>
 <head>
   <title>Fortnite Predators</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      font-family: Arial;
-      background: black;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
       color: white;
       text-align: center;
     }
 
     header {
-      background: linear-gradient(to right, red, black);
-      padding: 40px;
-      font-size: 35px;
+      background: linear-gradient(90deg, red, black);
+      padding: 50px 20px;
+      font-size: 40px;
       font-weight: bold;
+      text-shadow: 0 0 10px red;
+    }
+
+    h2 {
+      color: red;
+      margin-top: 30px;
+    }
+
+    .container {
+      padding: 20px;
     }
 
     .card {
       background: #111;
-      margin: 10px;
-      padding: 15px;
-      border-radius: 10px;
       border: 1px solid red;
-      display: inline-block;
-    }
-
-    section {
+      border-radius: 12px;
       padding: 20px;
+      margin: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px red;
+      transition: 0.3s;
     }
 
-    button {
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px red;
+    }
+
+    .btn {
+      display: inline-block;
       background: red;
       color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
+      padding: 12px 25px;
+      margin-top: 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px red;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: black;
+      border: 1px solid red;
+      box-shadow: 0 0 20px red;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 12px;
+      color: gray;
     }
   </style>
 </head>
@@ -45,21 +77,27 @@
 
 <header>🔥 Fortnite Predators 🔥</header>
 
-<section>
+<div class="container">
+
   <h2>👑 Leader</h2>
   <div class="card">Sihle Ngongela</div>
-</section>
 
-<section>
   <h2>🎯 Members</h2>
   <div class="card">Coming Soon...</div>
-</section>
 
-<section>
-  <h2>🚀 Join</h2>
-  <p>Join our squad via Discord</p>
-  <button onclick="alert('Join our Discord!')">Apply</button>
-</section>
+  <h2>🚀 Join The Clan</h2>
+  <p>Think you’re good enough? Join our Discord!</p>
+
+  <!-- 🔴 PUT YOUR DISCORD LINK HERE -->
+  <a href="https://discord.gg/YOUR-LINK" target="_blank" class="btn">
+    Join Discord
+  </a>
+
+</div>
+
+<footer>
+  © 2026 Fortnite Predators | Built by Sihle
+</footer>
 
 </body>
 </html>
